@@ -9,6 +9,10 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
         </style>
+        
+        <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
 </head>
 <body>
     <h1>I am the captain now</h1>
@@ -16,5 +20,14 @@
     <p>I am interested in taking your money</p>
     <p>No one will be harmed</p>
 
+    <div class = "chart" id = "firstChart">
+        <script>
+            var chart1  = "Chart1.json";
+
+            vegaEmbed("#firstChart", chart1)
+
+        </script>
+
+    </div>
     
     <h3>by Ben Pimley</h3>
